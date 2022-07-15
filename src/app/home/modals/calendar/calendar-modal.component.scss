@@ -1,0 +1,69 @@
+.modalSize {
+    width: 1000px;
+}
+
+.msgCard {
+    margin: 3px 0;
+    padding: 0;
+}
+
+.cardHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mat-raised-button {
+    margin: 2px 4px;
+    line-height: 25px;
+    padding: 0 ;
+    min-width: 55px;
+}
+
+.readMail {
+    background-color: #b7aeae38; 
+}
+
+.unreadMail {
+    font-weight: 500;
+}
+
+.msgBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 3px 5px;
+
+    .msgContent{
+        width: 800px;
+        height: 20px;
+        overflow: hidden;
+    }
+    .msgBtns {
+        display: flex;
+        justify-content: center;
+        // text-align: center;
+        .unread {
+            color: #b7aeae;
+            margin-right: 10px;
+            font-style: italic;
+            font-weight: normal;
+        }
+        .msgBtn {
+            margin: 0 3px;
+        }
+        .view {
+            color: #0d6efd;
+        }
+        .delete {
+            color: #dc3545;
+        }
+    }
+}
+
+.addBtn {
+    cursor: pointer;
+    background-color:#079b05; 
+    color: #fff;
+}

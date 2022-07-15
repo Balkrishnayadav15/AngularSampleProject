@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>{{NoContacts}} Contacts<hr></h2>
+<mat-dialog-content class="mat-typography modalSize">
+  <mat-card class="msgCard" *ngFor="let contact of ContactsData">
+    <mat-card-content>
+      <div class="contactBox">
+        <div class="contactContent" (click)="openViewContactDialog(contact.id)">
+          {{contact.name}}
+        </div>
+        <div class="msgBtns">
+          <mat-icon class="msgBtn view" (click)="openViewContactDialog(contact.id)">remove_red_eye</mat-icon>
+          <mat-icon class="msgBtn delete" (click)="deleteContact(contact.id)">delete</mat-icon>
+        </div> 
+      </div>
+    </mat-card-content>
+  </mat-card>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-mini-fab class="addBtn" (click)="openCreateContactDialog()">
+    <mat-icon>add</mat-icon>
+  </button>
+</mat-dialog-actions>

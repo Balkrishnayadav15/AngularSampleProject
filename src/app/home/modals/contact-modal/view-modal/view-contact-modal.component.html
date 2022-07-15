@@ -1,0 +1,18 @@
+
+<h2 mat-dialog-title>Contact<hr></h2>
+<mat-dialog-content class="mat-typography modalSize">
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Name</mat-label>
+    <input type="text" class="inputValue" matInput [value]="contact.name" readonly>
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Contact Number</mat-label>
+    <input class="inputValue" matInput [value]="contact.contactNo" readonly>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button mat-dialog-close>
+    Close
+  </button>
+</mat-dialog-actions>
+

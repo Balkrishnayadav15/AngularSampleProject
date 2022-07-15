@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>Mail Inbox<hr></h2>
+<mat-dialog-content class="mat-typography modalSize">
+  <mat-card class="msgCard" *ngFor="let mail of mailsData">
+    <mat-card-content [ngClass]="mail.status == 'read' ? 'readMail' : 'unreadMail'">
+      <div class="msgBox">
+        <div class="msgContent" (click)="openViewMailDialog(mail.id)">
+          {{mail.mail}}
+        </div>
+        <div class="msgBtns">
+          <div class="unread" *ngIf="mail.status == 'unread'">unread</div>
+          <mat-icon class="msgBtn view" (click)="openViewMailDialog(mail.id)">remove_red_eye</mat-icon>
+          <mat-icon class="msgBtn delete" (click)="deleteMail(mail.id)">delete</mat-icon>
+        </div> 
+      </div>
+    </mat-card-content>
+  </mat-card>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-mini-fab class="addBtn" (click)="openCreateMailDialog()">
+    <mat-icon>add</mat-icon>
+  </button>
+</mat-dialog-actions>

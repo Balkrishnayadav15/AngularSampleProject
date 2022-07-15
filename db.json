@@ -1,0 +1,104 @@
+{
+  "mail": [
+    {
+      "mail": "1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum doloribus, itaque saepe voluptatibus necessitatibus eveniet sed adipisci ipsam assumenda sunt consequuntur qui deserunt aliquam accusantium excepturi quis earum non. Asperiores.",
+      "status": "read",
+      "id": 1
+    },
+    {
+      "mail": "4Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum doloribus, itaque saepe voluptatibus necessitatibus eveniet sed adipisci ipsam assumenda sunt consequuntur qui deserunt aliquam accusantium excepturi quis earum non. Asperiores.",
+      "status": "unread",
+      "id": 3
+    }
+  ],
+  "contact": [
+    {
+      "id": 2,
+      "name": "Pyush",
+      "contactNo": 1234567890
+    },
+    {
+      "id": 3,
+      "name": "Aayush",
+      "contactNo": 1234567890
+    },
+    {
+      "name": "Ammu",
+      "contactNo": 1234567890,
+      "id": 4
+    },
+    {
+      "name": "Amit ",
+      "contactNo": 132456,
+      "id": 5
+    },
+    {
+      "name": "Kumkum",
+      "contactNo": 4578945663,
+      "id": 6
+    },
+    {
+      "name": "Amit 2",
+      "contactNo": 7845129632,
+      "id": 7
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "start": "",
+      "end": "",
+      "text": "Event 1"
+    },
+    {
+      "start": {
+        "DayPilot.Date": {
+          "value": "2022-07-15T10:00:00"
+        }
+      },
+      "end": {
+        "DayPilot.Date": {
+          "value": "2022-07-15T12:00:00"
+        }
+      },
+      "text": "Making event",
+      "id": 2
+    },
+    {
+      "start": "2022-07-14T10:00:00",
+      "end": "2022-07-14T10:30:00",
+      "text": "Event 1",
+      "id": 3
+    },
+    {
+      "start": "2022-07-16T09:30:00",
+      "end": "2022-07-16T10:30:00",
+      "text": "Event 1",
+      "id": 4
+    },
+    {
+      "start": "2022-07-14T16:00:00",
+      "end": "2022-07-14T16:30:00",
+      "text": "Event 5",
+      "id": 5
+    },
+    {
+      "start": "2022-07-04T10:30:00",
+      "end": "2022-07-04T11:00:00",
+      "text": "Testing Event",
+      "id": 6
+    },
+    {
+      "start": "2022-07-15T16:00:00",
+      "end": "2022-07-15T16:30:00",
+      "text": "Event 1",
+      "id": 7
+    },
+    {
+      "start": "2022-07-12T02:30:00",
+      "end": "2022-07-12T03:00:00",
+      "text": "Event 6",
+      "id": 8
+    }
+  ]
+}

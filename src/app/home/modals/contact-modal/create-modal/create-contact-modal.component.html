@@ -1,0 +1,29 @@
+
+<h2 mat-dialog-title>Add Contact<hr></h2>
+<mat-dialog-content class="mat-typography modalSize">
+  <form class="example-form" [formGroup]="formValue">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Name</mat-label>
+      <input type="text" matInput class="form-control" formControlName="name" required>
+      <div *ngIf="formValue.controls['name'].invalid && (formValue.controls['name'].dirty || formValue.controls['name'].touched)" class="alert">
+        <div *ngIf="formValue.controls['name'].errors?.['required']" class="errorMsg">
+          Please enter name!!
+        </div>  
+      </div>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Contact Number</mat-label>
+      <input type="number" matInput formControlName="contactNo" required>
+      <div *ngIf="formValue.controls['contactNo'].invalid && (formValue.controls['contactNo'].dirty || formValue.controls['contactNo'].touched)" class="alert">
+        <div *ngIf="formValue.controls['contactNo'].errors?.['required']" class="errorMsg">
+          Please valid enter number!!
+        </div>
+      </div>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button class="sendBtn" (click)="addContact()">
+    Submit
+  </button>
+</mat-dialog-actions>

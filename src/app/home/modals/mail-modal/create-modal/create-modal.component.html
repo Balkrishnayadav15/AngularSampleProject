@@ -1,0 +1,16 @@
+
+<h2 mat-dialog-title>Create Mail
+    <hr>
+</h2>
+<mat-dialog-content class="mat-typography modalSize">
+    <form class="example-form" [formGroup]="formValue">
+        <mat-form-field class="example-full-width">
+          <textarea class="mailBox" matInput formControlName="mail" required></textarea>
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-mini-fab class="sendBtn" (click)="sendMail()">
+    <mat-icon>send</mat-icon>
+  </button>
+</mat-dialog-actions>
